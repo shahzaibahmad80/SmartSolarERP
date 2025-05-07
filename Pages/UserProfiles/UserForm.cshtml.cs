@@ -164,7 +164,12 @@ namespace SmartSolarERP.Pages.UserProfiles
                     throw new Exception(message);
                 }
 
-                if (_appConfig.IsDemoVersion == true && existing.FullName == "Administrator")
+                //if (_appConfig.IsDemoVersion == true && existing.FullName == "Administrator")
+                //{
+
+                //    throw new Exception("Modifying an Administrator on the Demo Version is Prohibited");
+                //}
+                if (_appConfig.IsDemoVersion == false && existing.FullName == "Administrator")
                 {
 
                     throw new Exception("Modifying an Administrator on the Demo Version is Prohibited");

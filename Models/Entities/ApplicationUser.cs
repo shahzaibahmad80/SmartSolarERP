@@ -20,7 +20,9 @@ namespace SmartSolarERP.Models.Entities
         public string? ZipCode { get; set; }
         public string? Avatar { get; set; }
         public UserType UserType { get; set; } = UserType.Internal;
-        public bool IsDefaultAdmin { get; set; } = false;
+        //public bool IsDefaultAdmin { get; set; } = false;
+        public bool IsDefaultAdmin { get; set; } = true; //making it true so he can login 
+
         public bool IsOnline { get; set; } = false;
         public required int SelectedCompanyId { get; set; }
         public Company? SelectedCompany { get; set; }

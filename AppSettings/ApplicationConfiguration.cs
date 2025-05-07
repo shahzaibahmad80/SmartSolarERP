@@ -3,7 +3,10 @@
     public class ApplicationConfiguration
     {
         public string AppName { get; set; } = string.Empty;
-        public bool IsDemoVersion { get; set; } = false;
+        public bool IsDemoVersion { get; set; } = false;//bypass the condtion that is already set to false..into true. did not work
+
+        //public bool IsDemoVersion { get; set; } = true;
+
         public bool IsDevelopment { get; set; } = true;
         public string Homepage { get; set; } = string.Empty;
         public string LoginPage { get; set; } = string.Empty;

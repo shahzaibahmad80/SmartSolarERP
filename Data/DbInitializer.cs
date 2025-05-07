@@ -48,34 +48,34 @@ namespace SmartSolarERP.Data
 
             await DefaultSystemWarehouse.GenerateAsync(services);
 
-            if (appConfig.Value.IsDemoVersion)
-            {
-                await DemoCustomerGroup.GenerateAsync(services);
-                await DemoCustomerCategory.GenerateAsync(services);
-                await DemoVendorGroup.GenerateAsync(services);
-                await DemoVendorCategory.GenerateAsync(services);
-                await DemoWarehouse.GenerateAsync(services);
-                await DemoCustomer.GenerateAsync(services);
-                await DemoVendor.GenerateAsync(services);
-                await DemoUnitMeasure.GenerateAsync(services);
-                await DemoProductGroup.GenerateAsync(services);
-                await DemoProduct.GenerateAsync(services);
-                await DemoCustomerContact.GenerateAsync(services);
-                await DemoVendorContact.GenerateAsync(services);
-                await DemoTax.GenerateAsync(services);
-                await DemoSalesOrder.GenerateAsync(services);
-                await DemoPurchaseOrder.GenerateAsync(services);
-                await DemoDeliveryOrder.GenerateAsync(services);
-                await DemoGoodsReceive.GenerateAsync(services);
-                await DemoSalesReturn.GenerateAsync(services);
-                await DemoPurchaseReturn.GenerateAsync(services);
-                await DemoTransferOut.GenerateAsync(services);
-                await DemoTransferIn.GenerateAsync(services);
-                await DemoAdjustmentMinus.GenerateAsync(services);
-                await DemoAdjustmentPlus.GenerateAsync(services);
-                await DemoScrapping.GenerateAsync(services);
-                await DemoStockCount.GenerateAsync(services);
-            }
+            //if (appConfig.Value.IsDemoVersion)
+            //{
+            //    await DemoCustomerGroup.GenerateAsync(services);
+            //    await DemoCustomerCategory.GenerateAsync(services);
+            //    await DemoVendorGroup.GenerateAsync(services);
+            //    await DemoVendorCategory.GenerateAsync(services);
+            //    await DemoWarehouse.GenerateAsync(services);
+            //    await DemoCustomer.GenerateAsync(services);
+            //    await DemoVendor.GenerateAsync(services);
+            //    await DemoUnitMeasure.GenerateAsync(services);
+            //    await DemoProductGroup.GenerateAsync(services);
+            //    await DemoProduct.GenerateAsync(services);
+            //    await DemoCustomerContact.GenerateAsync(services);
+            //    await DemoVendorContact.GenerateAsync(services);
+            //    await DemoTax.GenerateAsync(services);
+            //    await DemoSalesOrder.GenerateAsync(services);
+            //    await DemoPurchaseOrder.GenerateAsync(services);
+            //    await DemoDeliveryOrder.GenerateAsync(services);
+            //    await DemoGoodsReceive.GenerateAsync(services);
+            //    await DemoSalesReturn.GenerateAsync(services);
+            //    await DemoPurchaseReturn.GenerateAsync(services);
+            //    await DemoTransferOut.GenerateAsync(services);
+            //    await DemoTransferIn.GenerateAsync(services);
+            //    await DemoAdjustmentMinus.GenerateAsync(services);
+            //    await DemoAdjustmentPlus.GenerateAsync(services);
+            //    await DemoScrapping.GenerateAsync(services);
+            //    await DemoStockCount.GenerateAsync(services);
+            //}
         }
 
         public static DateTime[] GetRandomDays(int year, int month, int count)

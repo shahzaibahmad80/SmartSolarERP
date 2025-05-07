@@ -82,7 +82,7 @@ namespace SmartSolarERP.Pages.Users
             public UserType UserType { get; set; } = UserType.Internal;
 
             [DisplayName("Is Default Admin")]
-            public bool IsDefaultAdmin { get; set; } = false;
+            public bool IsDefaultAdmin { get; set; } = false;//thi is false by default...
 
             [DisplayName("Selected Company")]
             public int SelectedCompanyId { get; set; }
